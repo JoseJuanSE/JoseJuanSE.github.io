@@ -50,7 +50,7 @@
 	            <div class="col-12 col-md-auto">
 		            <div class="dark-mode-switch d-flex">
 						<div class="form-check form-switch mx-auto mx-md-0">
-							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch"/>
 							<label class="custom-control-label" for="darkSwitch">Modo Obscuro</label>
 						</div>
 			        </div><!--//dark-mode-switch-->
@@ -83,6 +83,10 @@
     </footer><!--//footer-->
  
     <!-- Javascript -->          
+    <script> 
+        var checkbox = document.getElementById("darkSwitch");
+        checkbox.checked = true;
+    </script>
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
     <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
