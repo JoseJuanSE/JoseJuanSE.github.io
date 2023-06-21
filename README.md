@@ -1,2 +1,2 @@
-# Santirax.github.io
+# JoseJuanSE.github.io
 Portafolio
