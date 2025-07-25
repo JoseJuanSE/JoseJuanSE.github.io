@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose Juan Suarez Elizalde | Desarrollador de Software</title>
-    <meta name="description" content="Portafolio profesional de Jose Juan Suarez Elizalde, un desarrollador de software con experiencia en Meta y Amazon.">
+    <title id="page-title">Jose Juan Suarez Elizalde | Desarrollador de Software</title>
+    <meta id="page-description" name="description" content="Portafolio profesional de Jose Juan Suarez Elizalde, un desarrollador de software con experiencia en Meta y Amazon.">
     <meta name="author" content="Jose Juan Suarez Elizalde">
     <link rel="icon" href="https://placehold.co/32x32/1e293b/ffffff?text=JJ" type="image/png">
 
@@ -87,6 +87,12 @@
         <!-- ===== LEFT/HEADER COLUMN (Sticky) ===== -->
         <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-12">
             <div>
+                 <!-- Language Switcher -->
+                <div class="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-12 lg:right-0">
+                    <button id="lang-switcher" class="rounded-md bg-white/50 px-3 py-1.5 text-sm font-semibold text-secondary shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-light-bg transition-colors">
+                        EN
+                    </button>
+                </div>
                 <!-- Profile Info -->
                 <div class="flex items-center gap-4 mb-6">
                     <img class="h-20 w-20 rounded-full border-2 border-white shadow-md" 
@@ -97,20 +103,19 @@
                         <h1 class="text-3xl md:text-4xl font-bold text-secondary">
                             <a href="/" class="hover:text-primary transition-colors">Jose Juan Suarez Elizalde</a>
                         </h1>
-                        <h2 class="mt-1 text-lg font-medium text-slate-600">Desarrollador de Software</h2>
+                        <h2 data-translate-key="subtitle" class="mt-1 text-lg font-medium text-slate-600">Desarrollador de Software</h2>
                     </div>
                 </div>
-                <p class="mt-4 max-w-xs text-light-text text-sm">
+                <p data-translate-key="about_me_short" class="mt-4 max-w-xs text-light-text text-sm">
                    Ingeniero de Software con experiencia de alto impacto en Meta y Amazon, enfocado en la creación de soluciones escalables y eficientes.
                 </p>
 
                 <!-- Navigation -->
                 <nav class="hidden lg:block mt-12" aria-label="Navegación principal">
                     <ul class="space-y-4">
-                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#experience">Experiencia</a></li>
-                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#education">Educación</a></li>
-                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#technologies">Tecnologías</a></li>
-                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#projects">Proyectos</a></li>
+                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#experience" data-translate-key="nav_experience">Experiencia y Proyectos</a></li>
+                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#education" data-translate-key="nav_education">Educación</a></li>
+                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#technologies" data-translate-key="nav_technologies">Tecnologías</a></li>
                     </ul>
                 </nav>
             </div>
@@ -128,7 +133,7 @@
                 </a>
                 <a class="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all" href="https://t.me/+525583799278" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                    Contáctame
+                    <span data-translate-key="contact_button">Contáctame</span>
                 </a>
             </div>
         </header>
@@ -138,78 +143,118 @@
             
             <!-- About Section -->
             <section id="about" class="mb-16 scroll-mt-24 animate-fade-in-up" style="animation-delay: 100ms;">
-                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">SOBRE MÍ</h2>
-                <p class="text-gray-700 leading-relaxed">
+                <h2 data-translate-key="about_title" class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">SOBRE MÍ</h2>
+                <p data-translate-key="about_p" class="text-gray-700 leading-relaxed">
                     Ingeniero de Software con una sólida base en algoritmos y estructuras de datos, y un historial comprobado de entrega de soluciones de alto impacto en Meta y Amazon. Reconocido por mi rápido aprendizaje, habilidades excepcionales para la resolución de problemas y la capacidad para abordar desafíos técnicos complejos.
                 </p>
             </section>
 
-            <!-- Experience Section -->
+            <!-- Experience & Projects Section -->
             <section id="experience" class="mb-16 scroll-mt-24 animate-fade-in-up" style="animation-delay: 200ms;">
-                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">EXPERIENCIA</h2>
+                <h2 data-translate-key="experience_title" class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">EXPERIENCIA Y PROYECTOS</h2>
                 <div class="space-y-8">
                     <!-- Job Item -->
                     <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
-                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo">Nov 2025 - Presente</header>
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo" data-translate-key="exp1_date">Nov 2025 - Presente</header>
                         <div class="z-10 sm:col-span-6">
                             <h3 class="font-semibold leading-snug text-slate-800">
-                                <div><span class="font-bold">Software Engineer, Instagram Mobile Architecture · Meta</span></div>
+                                <div><span class="font-bold" data-translate-key="exp1_title">Software Engineer, Instagram Mobile Architecture · Meta</span></div>
                             </h3>
-                            <p class="mt-2 text-sm leading-normal text-gray-700">Próxima incorporación al equipo de arquitectura móvil de Instagram en Nueva York.</p>
+                            <p data-translate-key="exp1_desc" class="mt-2 text-sm leading-normal text-gray-700">Próxima incorporación al equipo de arquitectura móvil de Instagram en Nueva York.</p>
                         </div>
                     </div>
                     <!-- Job Item -->
                     <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
-                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo">May – Ago 2024</header>
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo" data-translate-key="exp2_date">May – Ago 2024</header>
                         <div class="z-10 sm:col-span-6">
                             <h3 class="font-semibold leading-snug text-slate-800">
-                                <div><span class="font-bold">Software Engineer Intern, Instagram Mobile Architecture · Meta</span></div>
+                                <div><span class="font-bold" data-translate-key="exp2_title">Software Engineer Intern, Instagram Mobile Architecture · Meta</span></div>
                             </h3>
                             <ul class="mt-2 list-disc list-outside ml-5 text-sm text-gray-700 space-y-1">
-                                <li>Lideré una refactorización crítica del framework de generación de APIs de Instagram en Rust, mejorando la modularidad y mantenibilidad del sistema.</li>
-                                <li>Descubrí un fallo crítico en el plan original del proyecto; diseñé e implementé de forma independiente una solución correcta para la detección de ciclos de esquema utilizando el algoritmo de Tarjan, haciendo el sistema más rápido, simple y escalable.</li>
-                                <li>Superé los objetivos al migrar más de 85 esquemas de API y realizar más de 120 diffs, demostrando alta productividad y ownership.</li>
+                                <li data-translate-key="exp2_li1">Lideré una refactorización crítica del framework de generación de APIs de Instagram en Rust, mejorando la modularidad y mantenibilidad del sistema.</li>
+                                <li data-translate-key="exp2_li2">Descubrí un fallo crítico en el plan original del proyecto; diseñé e implementé de forma independiente una solución correcta para la detección de ciclos de esquema utilizando el algoritmo de Tarjan, haciendo el sistema más rápido, simple y escalable.</li>
+                                <li data-translate-key="exp2_li3">Superé los objetivos al migrar más de 85 esquemas de API y realizar más de 120 diffs, demostrando alta productividad y ownership.</li>
                             </ul>
                         </div>
                     </div>
                     <!-- Job Item -->
                     <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
-                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo">Ene – Jul 2024</header>
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo" data-translate-key="exp3_date">Ene – Jul 2024</header>
                         <div class="z-10 sm:col-span-6">
                             <h3 class="font-semibold leading-snug text-slate-800">
-                                <div><span class="font-bold">Software Development Engineer (SDE I) · Amazon</span></div>
+                                <div><span class="font-bold" data-translate-key="exp3_title">Software Development Engineer (SDE I) · Amazon</span></div>
                             </h3>
                             <ul class="mt-2 list-disc list-outside ml-5 text-sm text-gray-700 space-y-1">
-                                <li>Desarrollé y mantuve características para el servicio de entrega de fotos de Alexa, manejando más de 200 mil millones de fotos al mes.</li>
-                                <li>Resolví 4 SEV-2s críticos y 7 SEV-3s durante la primera rotación de guardia, asegurando una alta disponibilidad del servicio.</li>
-                                <li>Ejecuté migraciones de servicios graduales en múltiples regiones utilizando weblabs de MCM para minimizar riesgos y garantizar la estabilidad.</li>
+                                <li data-translate-key="exp3_li1">Desarrollé y mantuve características para el servicio de entrega de fotos de Alexa, manejando más de 200 mil millones de fotos al mes.</li>
+                                <li data-translate-key="exp3_li2">Resolví 4 SEV-2s críticos y 7 SEV-3s durante la primera rotación de guardia, asegurando una alta disponibilidad del servicio.</li>
+                                <li data-translate-key="exp3_li3">Ejecuté migraciones de servicios graduales en múltiples regiones utilizando weblabs de MCM para minimizar riesgos y garantizar la estabilidad.</li>
                             </ul>
                         </div>
                     </div>
-                     <!-- Add more job items as needed -->
+                    <!-- Job Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo" data-translate-key="exp4_date">May – Ago 2022</header>
+                        <div class="z-10 sm:col-span-6">
+                            <h3 class="font-semibold leading-snug text-slate-800">
+                                <div><span class="font-bold" data-translate-key="exp4_title">Software Engineer Intern · Meta</span></div>
+                            </h3>
+                            <ul class="mt-2 list-disc list-outside ml-5 text-sm text-gray-700 space-y-1">
+                                <li data-translate-key="exp4_li1">Desarrollé características clave de grabación/reproducción de avatares para Horizon Worlds, presentadas en la keynote de Connect 2022.</li>
+                                <li data-translate-key="exp4_li2">Re-arquitecté la reproducción de avatares a un modelo de un solo hilo, reduciendo la complejidad y eliminando las condiciones de carrera.</li>
+                                <li data-translate-key="exp4_li3">Optimicé la memoria de grabación de O(n) a O(1), permitiendo grabaciones más largas y estables en Quest 2.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Job Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo" data-translate-key="exp5_date">Jun – Ago 2021</header>
+                        <div class="z-10 sm:col-span-6">
+                            <h3 class="font-semibold leading-snug text-slate-800">
+                                <div><span class="font-bold" data-translate-key="exp5_title">Intern for Engineering · Facebook University</span></div>
+                            </h3>
+                            <ul class="mt-2 list-disc list-outside ml-5 text-sm text-gray-700 space-y-1">
+                                <li data-translate-key="exp5_li1">Completé un programa intensivo de desarrollo de Android, creando una aplicación original para demostrar un rápido aprendizaje.</li>
+                                <li data-translate-key="exp5_li2">Recibí una oferta de regreso basada en el excelente rendimiento del proyecto y la colaboración.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Job Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo" data-translate-key="exp6_date">Dic 2017 – Presente</header>
+                        <div class="z-10 sm:col-span-6">
+                            <h3 class="font-semibold leading-snug text-slate-800">
+                                <div><span class="font-bold" data-translate-key="exp6_title">Programación Competitiva y Proyectos</span></div>
+                            </h3>
+                            <ul class="mt-2 list-disc list-outside ml-5 text-sm text-gray-700 space-y-1">
+                                <li data-translate-key="exp6_li1">Resultados de alto nivel en competencias de programación: 5º lugar en el ICPC Gran Prix de México 2023 y 2º en la Olimpiada de la Ciudad de México.</li>
+                                <li data-translate-key="exp6_li2">Asistí a numerosos campamentos de entrenamiento intensivo, incluido un campamento de preparación para las Finales Mundiales de ICPC en La Habana, Cuba.</li>
+                                <li data-translate-key="exp6_li3">Contribuí a la comunidad como mentor de más de 40 estudiantes, enseñando algoritmos en ESCOM y creando problemas para la Olimpiada Mexicana de Informática (OMI).</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Education Section -->
             <section id="education" class="mb-16 scroll-mt-24 animate-fade-in-up" style="animation-delay: 300ms;">
-                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">EDUCACIÓN</h2>
+                <h2 data-translate-key="education_title" class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">EDUCACIÓN</h2>
                  <div class="space-y-6">
                     <!-- Education Item -->
                     <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
                         <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de estudio">2019 – 2025</header>
                         <div class="z-10 sm:col-span-6">
-                            <h3 class="font-semibold leading-snug text-slate-800"><span class="font-bold">Ingeniería en Sistemas Computacionales</span></h3>
-                            <p class="text-sm text-gray-700">Escuela Superior de Cómputo (ESCOM, IPN)</p>
-                            <p class="text-xs text-light-text">Estudiante de intercambio (7º semestre) en la UPM, Madrid, España.</p>
+                            <h3 class="font-semibold leading-snug text-slate-800"><span class="font-bold" data-translate-key="edu1_title">Ingeniería en Sistemas Computacionales</span></h3>
+                            <p class="text-sm text-gray-700" data-translate-key="edu1_school">Escuela Superior de Cómputo (ESCOM, IPN)</p>
+                            <p class="text-xs text-light-text" data-translate-key="edu1_desc">Estudiante de intercambio (7º semestre) en la UPM, Madrid, España.</p>
                         </div>
                     </div>
                     <!-- Education Item -->
                     <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
                         <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de estudio">2016 – 2019</header>
                         <div class="z-10 sm:col-span-6">
-                            <h3 class="font-semibold leading-snug text-slate-800"><span class="font-bold">Carrera Técnica en Informática</span></h3>
-                            <p class="text-sm text-gray-700">Centro de Estudios Científicos y Tecnológicos N°13 (IPN)</p>
-                            <p class="text-xs text-light-text">Múltiples premios en programación, matemáticas y emprendimiento.</p>
+                            <h3 class="font-semibold leading-snug text-slate-800"><span class="font-bold" data-translate-key="edu2_title">Carrera Técnica en Informática</span></h3>
+                            <p class="text-sm text-gray-700" data-translate-key="edu2_school">Centro de Estudios Científicos y Tecnológicos N°13 (IPN)</p>
+                            <p class="text-xs text-light-text" data-translate-key="edu2_desc">Múltiples premios en programación, matemáticas y emprendimiento.</p>
                         </div>
                     </div>
                 </div>
@@ -217,85 +262,176 @@
 
             <!-- Technologies Section -->
             <section id="technologies" class="mb-16 scroll-mt-24 animate-fade-in-up" style="animation-delay: 400ms;">
-                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">TECNOLOGÍAS</h2>
+                <h2 data-translate-key="technologies_title" class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">TECNOLOGÍAS</h2>
                 <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag">Rust</span>
-                    <span class="skill-tag">C++</span>
-                    <span class="skill-tag">C#</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Unity Engine</span>
-                    <span class="skill-tag">VR (Oculus SDK)</span>
-                    <span class="skill-tag">Android</span>
-                    <span class="skill-tag">AWS</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">GraphQL</span>
-                    <span class="skill-tag">System Design</span>
-                    <span class="skill-tag">Algorithms</span>
+                    <span class="skill-tag">Rust</span> <span class="skill-tag">C++</span> <span class="skill-tag">C#</span> <span class="skill-tag">Python</span> <span class="skill-tag">Java</span> <span class="skill-tag">JavaScript</span> <span class="skill-tag">Unity Engine</span> <span class="skill-tag">VR (Oculus SDK)</span> <span class="skill-tag">Android</span> <span class="skill-tag">AWS</span> <span class="skill-tag">Git</span> <span class="skill-tag">GraphQL</span> <span class="skill-tag">System Design</span> <span class="skill-tag">Algorithms</span>
                 </div>
                 <style>.skill-tag { display: inline-flex; align-items: center; background-color: #e0e7ff; color: #3730a3; font-weight: 500; font-size: 0.8rem; padding: 0.25rem 0.75rem; border-radius: 9999px; transition: all 0.2s; } .skill-tag:hover { background-color: #c7d2fe; color: #312e81; }</style>
-            </section>
-            
-            <!-- Projects Section -->
-            <section id="projects" class="scroll-mt-24 animate-fade-in-up" style="animation-delay: 500ms;">
-                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">PROYECTOS DESTACADOS</h2>
-                <div class="space-y-6">
-                    <!-- Project Item -->
-                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
-                        <div class="z-10 sm:col-span-8">
-                            <h3 class="font-semibold leading-snug text-slate-800">
-                                <a href="https://github.com/JoseJuanSE" target="_blank" class="inline-flex items-baseline font-medium leading-tight text-slate-800 hover:text-primary focus-visible:text-primary group/link text-base">
-                                    <span class="font-bold">Programación Competitiva</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal text-gray-700">
-                                Resultados de alto nivel en competencias de programación: 5º lugar en el ICPC Gran Prix de México 2023 y 2º en la Olimpiada de la Ciudad de México. Contribuciones a la comunidad como mentor y creador de problemas para la Olimpiada Mexicana de Informática (OMI).
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Project Item -->
-                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
-                         <div class="z-10 sm:col-span-8">
-                            <h3 class="font-semibold leading-snug text-slate-800">
-                                <a href="https://github.com/JoseJuanSE" target="_blank" class="inline-flex items-baseline font-medium leading-tight text-slate-800 hover:text-primary focus-visible:text-primary group/link text-base">
-                                    <span class="font-bold">Funcionalidades de Avatares en Horizon Worlds</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
-                                </a>
-                            </h3>
-                            <p class="mt-2 text-sm leading-normal text-gray-700">
-                                Desarrollé características clave de grabación y reproducción de avatares que fueron presentadas en la keynote de Connect 2022. Re-arquitecté la reproducción de avatares a un modelo de un solo hilo, reduciendo la complejidad y optimizando la memoria de grabación de O(n) a O(1) en Quest 2.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </section>
 
              <!-- Footer -->
             <footer class="mt-20 text-center text-xs text-light-text">
-                <p>Diseñado e inspirado en las últimas tendencias de desarrollo web.</p>
-                <p>Construido con <span class="font-semibold text-gray-600">Tailwind CSS</span> y alojado con cariño.</p>
+                <p data-translate-key="footer1">Diseñado e inspirado en las últimas tendencias de desarrollo web.</p>
+                <p><span data-translate-key="footer2_1">Construido con</span> <span class="font-semibold text-gray-600">Tailwind CSS</span> <span data-translate-key="footer2_2">y alojado con cariño.</span></p>
             </footer>
 
         </main>
     </div>
 
-    <!-- JavaScript for active nav link on scroll -->
+    <!-- ===== LANGUAGE & SCROLL LOGIC ===== -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('main section[id]');
-            const navLinks = document.querySelectorAll('nav .nav-link');
-
-            const observerOptions = {
-                root: null, // relative to the viewport
-                rootMargin: '0px',
-                threshold: 0.4 // 40% of the section must be visible
+            // --- 1. LANGUAGE CONTENT ---
+            const content = {
+                es: {
+                    page_title: "Jose Juan Suarez Elizalde | Desarrollador de Software",
+                    page_description: "Portafolio profesional de Jose Juan Suarez Elizalde, un desarrollador de software con experiencia en Meta y Amazon.",
+                    subtitle: "Desarrollador de Software",
+                    about_me_short: "Ingeniero de Software con experiencia de alto impacto en Meta y Amazon, enfocado en la creación de soluciones escalables y eficientes.",
+                    nav_experience: "Experiencia y Proyectos",
+                    nav_education: "Educación",
+                    nav_technologies: "Tecnologías",
+                    contact_button: "Contáctame",
+                    about_title: "SOBRE MÍ",
+                    about_p: "Ingeniero de Software con una sólida base en algoritmos y estructuras de datos, y un historial comprobado de entrega de soluciones de alto impacto en Meta y Amazon. Reconocido por mi rápido aprendizaje, habilidades excepcionales para la resolución de problemas y la capacidad para abordar desafíos técnicos complejos.",
+                    experience_title: "EXPERIENCIA Y PROYECTOS",
+                    exp1_date: "Nov 2025 - Presente",
+                    exp1_title: "Software Engineer, Instagram Mobile Architecture · Meta",
+                    exp1_desc: "Próxima incorporación al equipo de arquitectura móvil de Instagram en Nueva York.",
+                    exp2_date: "May – Ago 2024",
+                    exp2_title: "Software Engineer Intern, Instagram Mobile Architecture · Meta",
+                    exp2_li1: "Lideré una refactorización crítica del framework de generación de APIs de Instagram en Rust, mejorando la modularidad y mantenibilidad del sistema.",
+                    exp2_li2: "Descubrí un fallo crítico en el plan original del proyecto; diseñé e implementé de forma independiente una solución correcta para la detección de ciclos de esquema utilizando el algoritmo de Tarjan, haciendo el sistema más rápido, simple y escalable.",
+                    exp2_li3: "Superé los objetivos al migrar más de 85 esquemas de API y realizar más de 120 diffs, demostrando alta productividad y ownership.",
+                    exp3_date: "Ene – Jul 2024",
+                    exp3_title: "Software Development Engineer (SDE I) · Amazon",
+                    exp3_li1: "Desarrollé y mantuve características para el servicio de entrega de fotos de Alexa, manejando más de 200 mil millones de fotos al mes.",
+                    exp3_li2: "Resolví 4 SEV-2s críticos y 7 SEV-3s durante la primera rotación de guardia, asegurando una alta disponibilidad del servicio.",
+                    exp3_li3: "Ejecuté migraciones de servicios graduales en múltiples regiones utilizando weblabs de MCM para minimizar riesgos y garantizar la estabilidad.",
+                    exp4_date: "May – Ago 2022",
+                    exp4_title: "Software Engineer Intern · Meta",
+                    exp4_li1: "Desarrollé características clave de grabación/reproducción de avatares para Horizon Worlds, presentadas en la keynote de Connect 2022.",
+                    exp4_li2: "Re-arquitecté la reproducción de avatares a un modelo de un solo hilo, reduciendo la complejidad y eliminando las condiciones de carrera.",
+                    exp4_li3: "Optimicé la memoria de grabación de O(n) a O(1), permitiendo grabaciones más largas y estables en Quest 2.",
+                    exp5_date: "Jun – Ago 2021",
+                    exp5_title: "Intern for Engineering · Facebook University",
+                    exp5_li1: "Completé un programa intensivo de desarrollo de Android, creando una aplicación original para demostrar un rápido aprendizaje.",
+                    exp5_li2: "Recibí una oferta de regreso basada en el excelente rendimiento del proyecto y la colaboración.",
+                    exp6_date: "Dic 2017 – Presente",
+                    exp6_title: "Programación Competitiva y Proyectos",
+                    exp6_li1: "Resultados de alto nivel en competencias de programación: 5º lugar en el ICPC Gran Prix de México 2023 y 2º en la Olimpiada de la Ciudad de México.",
+                    exp6_li2: "Asistí a numerosos campamentos de entrenamiento intensivo, incluido un campamento de preparación para las Finales Mundiales de ICPC en La Habana, Cuba.",
+                    exp6_li3: "Contribuí a la comunidad como mentor de más de 40 estudiantes, enseñando algoritmos en ESCOM y creando problemas para la Olimpiada Mexicana de Informática (OMI).",
+                    education_title: "EDUCACIÓN",
+                    edu1_title: "Ingeniería en Sistemas Computacionales",
+                    edu1_school: "Escuela Superior de Cómputo (ESCOM, IPN)",
+                    edu1_desc: "Estudiante de intercambio (7º semestre) en la UPM, Madrid, España.",
+                    edu2_title: "Carrera Técnica en Informática",
+                    edu2_school: "Centro de Estudios Científicos y Tecnológicos N°13 (IPN)",
+                    edu2_desc: "Múltiples premios en programación, matemáticas y emprendimiento.",
+                    technologies_title: "TECNOLOGÍAS",
+                    footer1: "Diseñado e inspirado en las últimas tendencias de desarrollo web.",
+                    footer2_1: "Construido con",
+                    footer2_2: "y alojado con cariño.",
+                },
+                en: {
+                    page_title: "Jose Juan Suarez Elizalde | Software Developer",
+                    page_description: "Professional portfolio of Jose Juan Suarez Elizalde, a software developer with experience at Meta and Amazon.",
+                    subtitle: "Software Developer",
+                    about_me_short: "Software Engineer with high-impact experience at Meta and Amazon, focused on creating scalable and efficient solutions.",
+                    nav_experience: "Experience & Projects",
+                    nav_education: "Education",
+                    nav_technologies: "Technologies",
+                    contact_button: "Contact Me",
+                    about_title: "ABOUT ME",
+                    about_p: "Software Engineer with a strong foundation in algorithms and data structures, and a proven track record of delivering high-impact solutions at Meta and Amazon. Recognized for rapid learning, exceptional problem-solving skills, and the ability to tackle complex technical challenges.",
+                    experience_title: "EXPERIENCE & PROJECTS",
+                    exp1_date: "Nov 2025 - Present",
+                    exp1_title: "Software Engineer, Instagram Mobile Architecture · Meta",
+                    exp1_desc: "Upcoming start with the Instagram mobile architecture team in New York.",
+                    exp2_date: "May – Aug 2024",
+                    exp2_title: "Software Engineer Intern, Instagram Mobile Architecture · Meta",
+                    exp2_li1: "Led a critical refactoring of Instagram's API generation framework in Rust, improving system modularity and maintainability.",
+                    exp2_li2: "Discovered a critical flaw in the project's original plan; independently designed and implemented a correct solution for schema cycle-detection using Tarjan's algorithm, making the system faster, simpler, and more scalable.",
+                    exp2_li3: "Exceeded goals by migrating 85+ API schemas and landing 120+ diffs, showing high productivity and ownership.",
+                    exp3_date: "Jan – Jul 2024",
+                    exp3_title: "Software Development Engineer (SDE I) · Amazon",
+                    exp3_li1: "Developed and maintained features for Alexa's photo-delivery service, handling over 200B photos/month.",
+                    exp3_li2: "Resolved 4 critical SEV-2s & 7 SEV-3s during first on-call rotation, ensuring high service availability.",
+                    exp3_li3: "Executed gradual service migrations across multiple regions using MCM weblabs to minimize risk and ensure stability.",
+                    exp4_date: "May – Aug 2022",
+                    exp4_title: "Software Engineer Intern · Meta",
+                    exp4_li1: "Developed key avatar recording/playback features for Horizon Worlds, showcased in the Connect 2022 keynote.",
+                    exp4_li2: "Re-architected avatar playback to a single-threaded model, reducing complexity and eliminating race conditions.",
+                    exp4_li3: "Optimized recording memory from O(n) to O(1), enabling longer, more stable recordings on Quest 2.",
+                    exp5_date: "Jun – Aug 2021",
+                    exp5_title: "Intern for Engineering · Facebook University",
+                    exp5_li1: "Completed an intensive Android dev program, building an original app to demonstrate rapid learning.",
+                    exp5_li2: "Received a return offer based on outstanding project performance and collaboration.",
+                    exp6_date: "Dec 2017 – Present",
+                    exp6_title: "Competitive Programming & Projects",
+                    exp6_li1: "Top-tier results in programming competitions: 5th at ICPC Gran Prix of Mexico 2023 & 2nd in Mexico City Olympiad.",
+                    exp6_li2: "Attended numerous intensive training camps, including an ICPC World Finals prep camp in Havana, Cuba.",
+                    exp6_li3: "Contributed to the community by mentoring 40+ students, teaching algorithms at ESCOM, and creating problems for the Mexican Olympiad in Informatics (OMI).",
+                    education_title: "EDUCATION",
+                    edu1_title: "B.S. in Computer Systems Engineering",
+                    edu1_school: "Superior School of Computer Sciences (ESCOM, IPN)",
+                    edu1_desc: "Exchange Student (7th semester) at UPM, Madrid, Spain.",
+                    edu2_title: "Technical Career in Informatics",
+                    edu2_school: "Center of Scientific and Technological Studies N°13 (IPN)",
+                    edu2_desc: "Multiple awards in programming, math, & entrepreneurship.",
+                    technologies_title: "TECHNOLOGIES",
+                    footer1: "Designed and inspired by the latest trends in web development.",
+                    footer2_1: "Built with",
+                    footer2_2: "and hosted with love.",
+                }
             };
 
-            const observer = new IntersectionObserver((entries, observer) => {
+            // --- 2. LANGUAGE STATE & RENDER FUNCTION ---
+            let currentLang = 'es'; // Default language
+
+            const renderContent = (lang) => {
+                document.querySelectorAll('[data-translate-key]').forEach(el => {
+                    const key = el.getAttribute('data-translate-key');
+                    if (content[lang][key]) {
+                        el.innerHTML = content[lang][key];
+                    }
+                });
+                // Update meta tags and title
+                document.getElementById('page-title').textContent = content[lang].page_title;
+                document.getElementById('page-description').setAttribute('content', content[lang].page_description);
+                document.documentElement.lang = lang;
+                
+                // Update switcher button text
+                const switcher = document.getElementById('lang-switcher');
+                switcher.textContent = lang === 'es' ? 'EN' : 'ES';
+            };
+
+            // --- 3. LANGUAGE SWITCHER LOGIC ---
+            const langSwitcher = document.getElementById('lang-switcher');
+            langSwitcher.addEventListener('click', () => {
+                currentLang = currentLang === 'es' ? 'en' : 'es';
+                renderContent(currentLang);
+            });
+
+            // --- 4. INITIAL LANGUAGE DETECTION ---
+            const userLang = navigator.language || navigator.userLanguage; 
+            if (userLang.startsWith('en')) {
+                currentLang = 'en';
+            }
+            renderContent(currentLang);
+
+
+            // --- 5. SCROLLSPY LOGIC ---
+            const sections = document.querySelectorAll('main section[id]');
+            const navLinks = document.querySelectorAll('nav .nav-link');
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.4 };
+
+            const observer = new IntersectionObserver((entries) => {
+                let isAnySectionIntersecting = false;
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
+                        isAnySectionIntersecting = true;
                         const id = entry.target.getAttribute('id');
                         navLinks.forEach(link => {
                             link.classList.remove('active');
@@ -307,16 +443,23 @@
                 });
             }, observerOptions);
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
+            sections.forEach(section => observer.observe(section));
             
-            // Set the first link as active by default
+            // Fallback for when no section is active (e.g., at the very top/bottom)
+            window.addEventListener('scroll', () => {
+                let activeFound = false;
+                navLinks.forEach(link => {
+                    if(link.classList.contains('active')) activeFound = true;
+                });
+                if(!activeFound && navLinks.length > 0) {
+                     navLinks[0].classList.add('active');
+                }
+            });
+
             if (navLinks.length > 0) {
                  navLinks[0].classList.add('active');
             }
         });
     </script>
-
 </body>
 </html>
