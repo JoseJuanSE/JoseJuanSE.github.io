@@ -1,103 +1,322 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 <head>
-    <title>Portfolio</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
-    <!-- github activity css -->  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <title>Jose Juan Suarez Elizalde | Desarrollador de Software</title>
+    <meta name="description" content="Portafolio profesional de Jose Juan Suarez Elizalde, un desarrollador de software con experiencia en Meta y Amazon.">
+    <meta name="author" content="Jose Juan Suarez Elizalde">
+    <link rel="icon" href="https://placehold.co/32x32/1e293b/ffffff?text=JJ" type="image/png">
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container">     
-	        <div class="row align-items-center">
-			    <div class="col">         
-		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.jpg" alt="profile image" />
-		            <div class="profile-content">
-		                <h1 class="name">Jose Juan Suarez Elizalde</h1>
-		                <h2 class="desc">Desarrollador de Software</h2>   
-		                <ul class="social list-inline">
-                            <li class="list-inline-item"><a href="https://www.instagram.com/jose_juan_se/"><i class="fab fa-instagram"></i></a></li>
-		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/josejuanse/"><i class="fab fa-linkedin-in"></i></a></li>
-		                    <li class="list-inline-item"><a href="https://github.com/JoseJuanSE"><i class="fab fa-github-alt"></i></a></li>                  
-		                </ul> 
-		            </div><!--//profile-->
-			    </div><!--//col-->
-	            <div class="col-12 col-md-auto">
-		            <div class="dark-mode-switch d-flex">
-						<div class="form-check form-switch mx-auto mx-md-0">
-							<input type="checkbox" class="form-check-input me-2" id="darkSwitch"/>
-							<label class="custom-control-label" for="darkSwitch">Modo Obscuro</label>
-						</div>
-			        </div><!--//dark-mode-switch-->
-	                <a class="btn btn-cta-primary" href="https://t.me/+525583799278" target="_blank"><i class="fas fa-paper-plane"></i> Contáctame</a>        
-	            </div><!--//col-->
-	        </div><!--//row-->         
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper py-5">
-        <!-- add nicely a pdf --> 
-        <div id="pdfContainer">
-            <iframe src="assets\Jose_Juan_SE_Resume.pdf" width="100%" height="600px"></iframe>
-        </div>
-        
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Edited with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">@elissabj ft. @JoseJuanSE of : Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-        
-        <div class="container text-center">
-            <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright"><a href="assets\PublicKeyEva.pem" download >Download my public key!!!</a></small>
-    </div><!--//container-->
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script> 
-        var checkbox = document.getElementById("darkSwitch");
-        checkbox.checked = true;
+    <!-- Custom Tailwind Config & Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#1D4ED8', // A strong blue
+                        'secondary': '#1E293B', // A dark slate blue
+                        'light-bg': '#F1F5F9', // A light gray background
+                        'light-text': '#64748B', // A medium gray for text
+                    },
+                    animation: {
+                        'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        'fade-in-up': {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
     </script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
-</body>
-</html> 
+    
+    <style>
+        /* Style for the active navigation link */
+        .nav-link.active {
+            color: #1D4ED8; /* primary color */
+            transform: translateX(5px);
+            font-weight: 700;
+        }
+        .nav-link.active::before {
+            content: '';
+            position: absolute;
+            left: -1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 1.5rem;
+            width: 3px;
+            background-color: #1D4ED8; /* primary color */
+            border-radius: 2px;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
 
+<body class="bg-light-bg text-slate-800 antialiased">
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto lg:flex lg:gap-12 p-4 sm:p-6 lg:p-12">
+
+        <!-- ===== LEFT/HEADER COLUMN (Sticky) ===== -->
+        <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-12">
+            <div>
+                <!-- Profile Info -->
+                <div class="flex items-center gap-4 mb-6">
+                    <img class="h-20 w-20 rounded-full border-2 border-white shadow-md" 
+                         src="https://i.ibb.co/L9Y3d28/profile.jpg" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/80x80/1e293b/ffffff?text=JJ';"
+                         alt="Foto de perfil de Jose Juan Suarez Elizalde">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold text-secondary">
+                            <a href="/" class="hover:text-primary transition-colors">Jose Juan Suarez Elizalde</a>
+                        </h1>
+                        <h2 class="mt-1 text-lg font-medium text-slate-600">Desarrollador de Software</h2>
+                    </div>
+                </div>
+                <p class="mt-4 max-w-xs text-light-text text-sm">
+                   Ingeniero de Software con experiencia de alto impacto en Meta y Amazon, enfocado en la creación de soluciones escalables y eficientes.
+                </p>
+
+                <!-- Navigation -->
+                <nav class="hidden lg:block mt-12" aria-label="Navegación principal">
+                    <ul class="space-y-4">
+                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#experience">Experiencia</a></li>
+                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#education">Educación</a></li>
+                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#technologies">Tecnologías</a></li>
+                        <li><a class="nav-link group relative flex items-center text-light-text hover:text-primary font-semibold transition-all duration-300" href="#projects">Proyectos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Social & Contact -->
+            <div class="mt-8 flex items-center gap-5">
+                <a href="https://github.com/JoseJuanSE" target="_blank" aria-label="GitHub" class="text-light-text hover:text-primary transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/josejuanse/" target="_blank" aria-label="LinkedIn" class="text-light-text hover:text-primary transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://www.instagram.com/jose_juan_se/" target="_blank" aria-label="Instagram" class="text-light-text hover:text-primary transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a class="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all" href="https://t.me/+525583799278" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    Contáctame
+                </a>
+            </div>
+        </header>
+
+        <!-- ===== RIGHT/CONTENT COLUMN (Scrollable) ===== -->
+        <main id="content" class="pt-10 lg:w-1/2 lg:py-12">
+            
+            <!-- About Section -->
+            <section id="about" class="mb-16 scroll-mt-24 animate-fade-in-up" style="animation-delay: 100ms;">
+                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">SOBRE MÍ</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Ingeniero de Software con una sólida base en algoritmos y estructuras de datos, y un historial comprobado de entrega de soluciones de alto impacto en Meta y Amazon. Reconocido por mi rápido aprendizaje, habilidades excepcionales para la resolución de problemas y la capacidad para abordar desafíos técnicos complejos.
+                </p>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="mb-16 scroll-mt-24 animate-fade-in-up" style="animation-delay: 200ms;">
+                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">EXPERIENCIA</h2>
+                <div class="space-y-8">
+                    <!-- Job Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo">Nov 2025 - Presente</header>
+                        <div class="z-10 sm:col-span-6">
+                            <h3 class="font-semibold leading-snug text-slate-800">
+                                <div><span class="font-bold">Software Engineer, Instagram Mobile Architecture · Meta</span></div>
+                            </h3>
+                            <p class="mt-2 text-sm leading-normal text-gray-700">Próxima incorporación al equipo de arquitectura móvil de Instagram en Nueva York.</p>
+                        </div>
+                    </div>
+                    <!-- Job Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo">May – Ago 2024</header>
+                        <div class="z-10 sm:col-span-6">
+                            <h3 class="font-semibold leading-snug text-slate-800">
+                                <div><span class="font-bold">Software Engineer Intern, Instagram Mobile Architecture · Meta</span></div>
+                            </h3>
+                            <ul class="mt-2 list-disc list-outside ml-5 text-sm text-gray-700 space-y-1">
+                                <li>Lideré una refactorización crítica del framework de generación de APIs de Instagram en Rust, mejorando la modularidad y mantenibilidad del sistema.</li>
+                                <li>Descubrí un fallo crítico en el plan original del proyecto; diseñé e implementé de forma independiente una solución correcta para la detección de ciclos de esquema utilizando el algoritmo de Tarjan, haciendo el sistema más rápido, simple y escalable.</li>
+                                <li>Superé los objetivos al migrar más de 85 esquemas de API y realizar más de 120 diffs, demostrando alta productividad y ownership.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Job Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de trabajo">Ene – Jul 2024</header>
+                        <div class="z-10 sm:col-span-6">
+                            <h3 class="font-semibold leading-snug text-slate-800">
+                                <div><span class="font-bold">Software Development Engineer (SDE I) · Amazon</span></div>
+                            </h3>
+                            <ul class="mt-2 list-disc list-outside ml-5 text-sm text-gray-700 space-y-1">
+                                <li>Desarrollé y mantuve características para el servicio de entrega de fotos de Alexa, manejando más de 200 mil millones de fotos al mes.</li>
+                                <li>Resolví 4 SEV-2s críticos y 7 SEV-3s durante la primera rotación de guardia, asegurando una alta disponibilidad del servicio.</li>
+                                <li>Ejecuté migraciones de servicios graduales en múltiples regiones utilizando weblabs de MCM para minimizar riesgos y garantizar la estabilidad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Add more job items as needed -->
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="mb-16 scroll-mt-24 animate-fade-in-up" style="animation-delay: 300ms;">
+                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">EDUCACIÓN</h2>
+                 <div class="space-y-6">
+                    <!-- Education Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de estudio">2019 – 2025</header>
+                        <div class="z-10 sm:col-span-6">
+                            <h3 class="font-semibold leading-snug text-slate-800"><span class="font-bold">Ingeniería en Sistemas Computacionales</span></h3>
+                            <p class="text-sm text-gray-700">Escuela Superior de Cómputo (ESCOM, IPN)</p>
+                            <p class="text-xs text-light-text">Estudiante de intercambio (7º semestre) en la UPM, Madrid, España.</p>
+                        </div>
+                    </div>
+                    <!-- Education Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-light-text sm:col-span-2" aria-label="Fechas de estudio">2016 – 2019</header>
+                        <div class="z-10 sm:col-span-6">
+                            <h3 class="font-semibold leading-snug text-slate-800"><span class="font-bold">Carrera Técnica en Informática</span></h3>
+                            <p class="text-sm text-gray-700">Centro de Estudios Científicos y Tecnológicos N°13 (IPN)</p>
+                            <p class="text-xs text-light-text">Múltiples premios en programación, matemáticas y emprendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies Section -->
+            <section id="technologies" class="mb-16 scroll-mt-24 animate-fade-in-up" style="animation-delay: 400ms;">
+                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">TECNOLOGÍAS</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Rust</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Unity Engine</span>
+                    <span class="skill-tag">VR (Oculus SDK)</span>
+                    <span class="skill-tag">Android</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GraphQL</span>
+                    <span class="skill-tag">System Design</span>
+                    <span class="skill-tag">Algorithms</span>
+                </div>
+                <style>.skill-tag { display: inline-flex; align-items: center; background-color: #e0e7ff; color: #3730a3; font-weight: 500; font-size: 0.8rem; padding: 0.25rem 0.75rem; border-radius: 9999px; transition: all 0.2s; } .skill-tag:hover { background-color: #c7d2fe; color: #312e81; }</style>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects" class="scroll-mt-24 animate-fade-in-up" style="animation-delay: 500ms;">
+                <h2 class="text-lg font-bold tracking-tight text-secondary sm:text-xl mb-4">PROYECTOS DESTACADOS</h2>
+                <div class="space-y-6">
+                    <!-- Project Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                        <div class="z-10 sm:col-span-8">
+                            <h3 class="font-semibold leading-snug text-slate-800">
+                                <a href="https://github.com/JoseJuanSE" target="_blank" class="inline-flex items-baseline font-medium leading-tight text-slate-800 hover:text-primary focus-visible:text-primary group/link text-base">
+                                    <span class="font-bold">Programación Competitiva</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </h3>
+                            <p class="mt-2 text-sm leading-normal text-gray-700">
+                                Resultados de alto nivel en competencias de programación: 5º lugar en el ICPC Gran Prix de México 2023 y 2º en la Olimpiada de la Ciudad de México. Contribuciones a la comunidad como mentor y creador de problemas para la Olimpiada Mexicana de Informática (OMI).
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Project Item -->
+                    <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                         <div class="z-10 sm:col-span-8">
+                            <h3 class="font-semibold leading-snug text-slate-800">
+                                <a href="https://github.com/JoseJuanSE" target="_blank" class="inline-flex items-baseline font-medium leading-tight text-slate-800 hover:text-primary focus-visible:text-primary group/link text-base">
+                                    <span class="font-bold">Funcionalidades de Avatares en Horizon Worlds</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </h3>
+                            <p class="mt-2 text-sm leading-normal text-gray-700">
+                                Desarrollé características clave de grabación y reproducción de avatares que fueron presentadas en la keynote de Connect 2022. Re-arquitecté la reproducción de avatares a un modelo de un solo hilo, reduciendo la complejidad y optimizando la memoria de grabación de O(n) a O(1) en Quest 2.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Footer -->
+            <footer class="mt-20 text-center text-xs text-light-text">
+                <p>Diseñado e inspirado en las últimas tendencias de desarrollo web.</p>
+                <p>Construido con <span class="font-semibold text-gray-600">Tailwind CSS</span> y alojado con cariño.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- JavaScript for active nav link on scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('main section[id]');
+            const navLinks = document.querySelectorAll('nav .nav-link');
+
+            const observerOptions = {
+                root: null, // relative to the viewport
+                rootMargin: '0px',
+                threshold: 0.4 // 40% of the section must be visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Set the first link as active by default
+            if (navLinks.length > 0) {
+                 navLinks[0].classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>
